@@ -10,12 +10,12 @@ const Footer = () => (
             <img src={logo} alt="Logo" className="w-10 h-10" />
           </span>
           <div>
-            <p className="font-display font-bold text-xl text-primary-foreground mb-2">InspirED Science Outreach</p>
+            <p className="font-display font-bold text-xl text-primary-foreground mb-2">InspirED Science</p>
             <p className="font-body text-primary-foreground/70 text-sm">
               London, Ontario, Canada
             </p>
             <p className="font-body text-primary-foreground/50 text-xs mt-6">
-              © {new Date().getFullYear()} InspirED Science Outreach. All rights reserved.
+              © {new Date().getFullYear()} InspirED Science. All rights reserved.
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 const links = [
   { label: "About", href: "#about" },
   { label: "Meet the Team", href: "#disciplines" },
-  { label: "Contact", href: "#contact" },
+  { label: "Impact", href: "#impact" },
 ];
 
 const Navbar = () => {

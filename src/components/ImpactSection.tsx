@@ -7,7 +7,7 @@ const ImpactSection = () => {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-br from-primary/10 via-yellow-100 to-white" ref={ref}>
+    <section id="impact" className="py-24 md:py-32 bg-gradient-to-br from-primary/10 via-yellow-100 to-white" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -16,10 +16,10 @@ const ImpactSection = () => {
           className="text-center mb-16"
         >
           <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Impact of Hands-On Science</p>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-primary mb-2">
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-primary mb-2">
             Our Workshops Make a Difference
           </h2>
-          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-body text-muted-foreground max-w-xl mx-auto">
             We believe hands-on science inspires curiosity, confidence, and lasting memories. Here’s how we make an impact:
           </p>
         </motion.div>
