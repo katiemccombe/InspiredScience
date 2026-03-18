@@ -1,13 +1,43 @@
+import logo from '../assets/Logo.png';
+
 const Footer = () => (
   <footer className="bg-primary py-12">
-    <div className="container mx-auto px-6 text-center">
-      <p className="font-display font-bold text-xl text-primary-foreground mb-2">InspirED Science Outreach</p>
-      <p className="font-body text-primary-foreground/70 text-sm">
-        Western University · London, Ontario, Canada
-      </p>
-      <p className="font-body text-primary-foreground/50 text-xs mt-6">
-        © {new Date().getFullYear()} InspirED Science Outreach. All rights reserved.
-      </p>
+    <div className="container mx-auto px-6">
+      <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-x-8 md:gap-x-12">
+        {/* Left: Main Info with Logo */}
+        <div className="flex items-center mb-8 md:mb-0">
+          <span className="w-12 h-12 flex items-center justify-center rounded-full bg-white mr-4">
+            <img src={logo} alt="Logo" className="w-10 h-10" />
+          </span>
+          <div>
+            <p className="font-display font-bold text-xl text-primary-foreground mb-2">InspirED Science Outreach</p>
+            <p className="font-body text-primary-foreground/70 text-sm">
+              London, Ontario, Canada
+            </p>
+            <p className="font-body text-primary-foreground/50 text-xs mt-6">
+              © {new Date().getFullYear()} InspirED Science Outreach. All rights reserved.
+            </p>
+          </div>
+        </div>
+        {/* Divider */}
+        <div className="hidden md:block h-20 border-l border-primary-foreground/30 mx-4"></div>
+        {/* Right: Contact Us */}
+        <div className="text-right">
+          <p className="font-display font-bold text-xl text-primary-foreground mb-2">Contact Us!</p>
+          <p className="font-body text-primary-foreground/70 text-sm">inspiredsci@gmail.com</p>
+          <a
+            href="https://www.instagram.com/inspired_sci/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center mt-4 font-body text-primary-foreground/80 hover:text-yellow-400 transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 mr-2">
+              <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0 1 20.5 7.75v8.5A4.25 4.25 0 0 1 16.25 20.5h-8.5A4.25 4.25 0 0 1 3.5 16.25v-8.5A4.25 4.25 0 0 1 7.75 3.5zm4.25 3.25a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zm0 1.5a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5zm5.25.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z" />
+            </svg>
+            Follow us on Instagram
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 );

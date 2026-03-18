@@ -1,28 +1,38 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Heart, FlaskConical, Microscope, Cpu } from "lucide-react";
+import Abbey from "..assets/Abbey.png";
+import John from "../assets/John.png";
+import Sam from "../assets/Sam.png";
+import Katie from "../assets/Katie.png";
+import Abinaci from "../assets/Abinaci.png";
 
 const disciplines = [
   {
     icon: Heart,
-    title: "Physiology",
-    description: "Exploring how the human body works through interactive demonstrations of organ systems and bodily functions.",
+    title: "Katie",
+    description: "bio",
   },
   {
     icon: FlaskConical,
-    title: "Pharmacology",
-    description: "Introducing students to the science of how medicines work and interact with living systems.",
+    title: "Abinaci",
+    description: "bio",
   },
   {
     icon: Microscope,
-    title: "Pathology",
-    description: "Examining the science of disease through hands-on microscopy and real-world case studies.",
+    title: "John",
+    description: "bio",
   },
   {
     icon: Cpu,
-    title: "Biomedical Engineering",
-    description: "Showcasing how engineering principles solve medical challenges through creative problem-solving workshops.",
+    title: "Abbey",
+    description: "bio",
   },
+  {
+    icon: Cpu,
+    title: "Sam",
+    description: "bio",
+  }
 ];
 
 const DisciplinesSection = () => {
@@ -38,9 +48,9 @@ const DisciplinesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-display text-sm uppercase tracking-[0.2em] text-secondary mb-4">What We Teach</p>
+          <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Introduction</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground">
-            Our Areas of Expertise
+            Meet the Team!
           </h2>
         </motion.div>
 

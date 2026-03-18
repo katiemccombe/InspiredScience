@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-lab.jpg";
+import heroImage from "../assets/herogroup.png";
+import logo from '../assets/Logo.png';
 
 const HeroSection = () => {
   return (
@@ -18,8 +19,16 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="font-display text-sm md:text-base uppercase tracking-[0.25em] text-primary-foreground/80 mb-6"
         >
-          Western University · London, Ontario
+          London, Ontario, Canada
         </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex justify-center mb-6"
+        >
+          <img src={logo} alt="Logo" className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white p-2 shadow-lg" />
+        </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,8 +36,6 @@ const HeroSection = () => {
           className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl text-primary-foreground leading-tight mb-6"
         >
           InspirED Science
-          <br />
-          Outreach
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -46,10 +53,10 @@ const HeroSection = () => {
         >
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-display font-bold text-accent-foreground transition-transform hover:scale-105"
-            style={{ background: "var(--gradient-cta)" }}
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-display font-bold text-white shadow-lg transition-transform hover:scale-105"
+            style={{ background: '#ff9d00' }}
           >
-            Book a Workshop
+            Request a Workshop
           </a>
           <a
             href="#about"
