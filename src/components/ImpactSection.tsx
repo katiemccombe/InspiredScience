@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Users, School, Lightbulb } from "lucide-react";
+import { Users, School, Lightbulb, Bird, BicepsFlexed, TestTube } from "lucide-react";
 
 const ImpactSection = () => {
   const ref = useRef(null);
@@ -15,47 +15,69 @@ const ImpactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Impact of Hands-On Science</p>
+          <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Lab Skills and Concepts Students Can Apply</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-primary mb-2">
-            Our Workshops Make a Difference
+            Current Workshops
           </h2>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            We believe hands-on science inspires curiosity, confidence, and lasting memories. Here’s how we make an impact:
+            We offer three core workshops for high school students, each designed for one class and built for hands-on participation. Sessions focus on physiology and give students experience with laboratory techniques such as pipetting, aseptic technique, and gel electrophoresis.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-          {[
-            {
-              icon: Users,
-              title: "Community Connections",
-              text: "We work with educators and mentors at Western University and local high schools to reach students who may not otherwise encounter STEM.",
-            },
-            {
-              icon: Lightbulb,
-              title: "First-Time Experiences",
-              text: "Many students have never used laboratory equipment before. Our workshops give them meaningful, memorable first encounters with real science.",
-            },
-            {
-              icon: School,
-              title: "Teacher Support",
-              text: "Teachers and school staff have been incredibly supportive, helping us connect with students and explore opportunities to bring workshops into their schools.",
-            },
-          ].map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 24 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.12 * i }}
-              className="bg-white/90 rounded-2xl shadow-lg border border-primary/20 text-center p-8 hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 via-yellow-100 to-white flex items-center justify-center mx-auto mb-6 shadow-md">
-                <item.icon className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-display font-bold text-xl text-primary mb-3">{item.title}</h3>
-              <p className="font-body text-muted-foreground leading-relaxed">{item.text}</p>
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          {/* Early Bird or Night Owl Workshop */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-white/90 rounded-2xl shadow-lg border border-primary/20 text-center p-8 flex flex-col items-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 via-yellow-100 to-white flex items-center justify-center mb-6 shadow-md">
+              <Bird className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="font-display font-bold text-xl text-primary mb-3">Early Bird or Night Owl</h3>
+            {/* Placeholder for future photo */}
+            <div className="w-full h-32 bg-primary/5 rounded-lg mb-4 flex items-center justify-center text-primary/30 text-sm">Photo</div>
+            <p className="font-body text-muted-foreground leading-relaxed text-left">
+              Students extract their own DNA and use PCR to analyze a gene linked to circadian rhythm. By examining their results, they explore whether their genetic profile aligns with their natural sleep preferences. This workshop introduces pipetting, PCR, and gel electrophoresis, and encourages critical thinking about genetics, environment, and the nature vs. nurture debate.
+            </p>
+          </motion.div>
+
+          {/* Enzymes in Action Workshop */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-white/90 rounded-2xl shadow-lg border border-primary/20 text-center p-8 flex flex-col items-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 via-yellow-100 to-white flex items-center justify-center mb-6 shadow-md">
+              <TestTube className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="font-display font-bold text-xl text-primary mb-3">Enzymes in Action</h3>
+            {/* Placeholder for future photo */}
+            <div className="w-full h-32 bg-primary/5 rounded-lg mb-4 flex items-center justify-center text-primary/30 text-sm">Photo</div>
+            <p className="font-body text-muted-foreground leading-relaxed text-left">
+              Students investigate the function of catalase using liver, potatoes, and onions. By altering temperature and pH, they observe how enzyme activity changes and explore what happens when the body cannot maintain homeostasis. This experiment illustrates how protein structure is linked to function and why stable internal conditions are critical for survival.
+            </p>
+          </motion.div>
+
+          {/* Circuit Training Workshop */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="bg-white/90 rounded-2xl shadow-lg border border-primary/20 text-center p-8 flex flex-col items-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 via-yellow-100 to-white flex items-center justify-center mb-6 shadow-md">
+              <BicepsFlexed className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="font-display font-bold text-xl text-primary mb-3">Circuit Training</h3>
+            {/* Placeholder for future photo */}
+            <div className="w-full h-32 bg-primary/5 rounded-lg mb-4 flex items-center justify-center text-primary/30 text-sm">Photo</div>
+            <p className="font-body text-muted-foreground leading-relaxed text-left">
+              Students learn about muscle function and electrophysiology using EMG and safe electrical stimulation devices. They observe and record muscle activity, then apply gentle stimulation to trigger muscle contractions—even controlling a classmate’s movements! This interactive experience connects theory to real physiology in a fun, memorable way.
+            </p>
+          </motion.div>
         </div>
       </div>
     </section>

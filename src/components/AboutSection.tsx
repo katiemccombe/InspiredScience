@@ -20,17 +20,18 @@ const AboutSection = () => {
           animate={inView ? "visible" : "hidden"}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <p className="font-display text-sm uppercase tracking-[0.2em] text-secondary mb-4">Our Story</p>
+          <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Our Story</p>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-6">
-            From Undergraduate Friends to Graduate Mentors
+            What is InspirED Science?
           </h2>
         </motion.div>
 
         <div className="max-w-4xl mx-auto space-y-8">
           {[
-            "Our group was formed by graduate students who share a passion for STEM and community outreach. We first met during our undergraduate studies and stayed connected as we continued into graduate programs in fields such as Physiology, Pharmacology, Pathology, and Biomedical Engineering.",
-            "Through our own experiences, we realized that many students do not have opportunities to participate in hands-on science or to meet people working in STEM. This inspired us to create InspirED Science Outreach to help make science more accessible to young students.",
-            "We are connected to our community through relationships with educators and mentors at Western University and local high schools in London, Ontario and nearby communities. Through these connections, we have shared our experiences with students and introduced basic laboratory concepts and demonstrations.",
+            "InspirED Science is a graduate student-led initiative dedicated to making science more engaging, accessible, and meaningful within South-Western Ontario communities. Founded by students passionate about education and outreach, InspirED Science is intended to support educators and inspire students through hands-on, interactive STEM experiences.",
+"Reflecting on our own journeys into the world of science, we recognize how inspiring it can be while still being inaccessible to most. While science classrooms are full of potential, there is often limited time and resources to bring complex concepts to life. InspirED Science works alongside teachers and schools to deliver engaging workshops and demonstrations that complement existing curricula while sparking deeper curiosity and understanding.",
+"Our team was formed through a shared commitment to experiential learning and as students ourselves, we understand the impact of hands-on discovery, and the difference it makes when science feels relevant, exciting, and approachable. This perspective drives everything we do.",
+"Our goal is to empower students to see themselves as capable scientists and critical thinkers, while supporting educators with meaningful, curriculum-aligned programming."
           ].map((text, i) => (
             <motion.p
               key={i}

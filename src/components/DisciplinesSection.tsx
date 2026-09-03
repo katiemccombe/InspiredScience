@@ -11,31 +11,31 @@ const disciplines = [
   {
     icon: BrainCog,
     title: "Katie",
-    description: "lalala lala llala lala lala lala lalalalala lalalalalala lalalalalala lallal ala lal allal alallalal alala lal alala lalala lalala lalalala lalalal lalla lalalla la lalalal alall l alalalala lalalala lala lalalala",
+    description: "Katie earned an Honours BSc in Interdisciplinary Medical Sciences at Western University and is currently pursuing an MESc in Biomedical Engineering. Her research focuses on developing and testing a virtual reality simulation of Victoria Hospital in London, Ontario, designed to help pediatric patients manage prehospital anxiety through familiarization. Katie enjoys snowboarding and participating in triathlons. Growing up in a small town in the Ottawa Valley, she experienced firsthand how programs like InspirED could bring classroom learning to life. She is passionate about giving back to her community and sharing her love for science and technology with students in similar situations.",
     photo: Katie,
   },
   {
     icon: FlaskConical,
     title: "Abinaci",
-    description: "bio",
+    description: "Abinaci earned an Honours BSc in Interdisciplinary Medical Sciences with a Minor in Medical Cell Biology at Western University and is currently pursuing an MSc in Physiology and Pharmacology. Her research focuses on identifying predictive markers for patients who develop acute kidney injury after cisplatin chemotherapy treatment. She enjoys playing volleyball and basketball, and she is passionate about making science accessible to broader audiences, seeing InspirED Science as a way to share complex scientific concepts with the public.",
     photo: Abinaci,
   },
   {
     icon: Microscope,
     title: "John",
-    description: "bio",
+    description: "John earned an Honours BSc in Interdisciplinary Medical Sciences at Western University and is currently pursuing an MSc in Physiology and Pharmacology. His research focuses on kidney injury and transplantation. He loves hockey, soccer, and the gym. John joined InspirED Science in hopes to provide access to STEM workshops that he never had.",
     photo: John,
   },
   {
     icon: Cpu,
     title: "Abbey",
-    description: "bio",
+    description: "Abbey earned an Honours BSc in Interdisciplinary Medical Sciences at Western University and is currently pursuing a PhD in Physiology and Pharmacology, where her research focuses on how certain cells in the intestine detect nutrients from food and chemical signals produced by the bacteria living in our gut, using mini-gut models called organoids. She loves hiking and pilates. Abbey joined InspirED Science because doing experiments in high school was one of her favourite parts of science class, and inspired her to pursue science in higher education. She realized that not all students have the same opportunities that she did, so she'd love to help bring hands-on experiments to schools that may not otherwise have access to them.",
     photo: Abbey,
   },
   {
     icon: Atom,
     title: "Sam",
-    description: "bio",
+    description: "Sam earned an Honours BSc in Interdisciplinary Medical Sciences at Western University and is currently pursuing a PhD in Pathology and Laboratory Medicine, where his research focuses on cannabis use during pregnancy and the risk of diabetes in children. He enjoys skiing and running, and he believes that accessible education is important. As a lay writer for science communication, Sam sees InspirED Science as an opportunity to bring the complexities of science to a wider audience.",
     photo: Sam,
   }
 ];
@@ -72,18 +72,16 @@ const DisciplinesSection = () => {
                 <d.icon className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-display font-bold text-2xl text-foreground mb-4 text-center">{d.title}</h3>
-              <div className="w-full flex flex-col md:flex-row items-start">
-                <div className="overflow-hidden">
-                  <img
-                    src={d.photo}
-                    alt={d.title + " photo"}
-                    className="w-36 h-36 aspect-square rounded-xl object-cover border border-border shadow-md mb-2 md:mb-0 md:mr-4 md:float-left"
-                    style={{ background: '#fff' }}
-                  />
-                  <p className="font-body text-muted-foreground leading-relaxed text-justify break-words whitespace-pre-line">
+              <div className="w-full flex flex-col items-center">
+                <img
+                  src={d.photo}
+                  alt={d.title + " photo"}
+                  className="w-36 h-36 aspect-square rounded-xl object-cover border border-border shadow-md mb-6"
+                  style={{ background: '#fff' }}
+                />
+                <p className="font-body text-muted-foreground leading-7 text-left break-words whitespace-pre-line">
                   {d.description}
-                  </p>
-                </div>
+                </p>
               </div>
             </motion.div>
           ))}
