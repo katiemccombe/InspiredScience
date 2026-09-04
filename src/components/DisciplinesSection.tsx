@@ -1,11 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { BrainCog, FlaskConical, Microscope, Cpu, Atom } from "lucide-react";
-import Abbey from "../assets/Abbey.png";
-import John from "../assets/John.png";
-import Sam from "../assets/Sam.png";
-import Katie from "../assets/Katie.png";
-import Abinaci from "../assets/Abinaci.png";
+import Abbey from "../assets/Abbey.jpg";
+import John from "../assets/John.jpg";
+import Sam from "../assets/Sam.jpg";
+import Katie from "../assets/Katie.jpg";
+import Abinaci from "../assets/Abinaci.jpg";
 
 const disciplines = [
   {
