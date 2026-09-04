@@ -51,16 +51,23 @@ const galleryItems = [
 
 const GallerySection = () => {
   const carouselApi = useRef(null);
+  const autoScrollInterval = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Auto-scroll every 3 seconds
   useEffect(() => {
-    if (!carouselApi.current) return;
-    const api = carouselApi.current;
-    const interval = setInterval(() => {
-      if (api && api.scrollNext) api.scrollNext();
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [carouselApi.current]);
+    return () => {
+      if (autoScrollInterval.current) {
+        clearInterval(autoScrollInterval.current);
+      }
+    };
+  }, []);
+
+  const handleSetApi = React.useCallback((api) => {
+    carouselApi.current = api;
+    if (autoScrollInterval.current) {
+      clearInterval(autoScrollInterval.current);
+    }
+    autoScrollInterval.current = setInterval(() => api?.scrollNext(), 3000);
+  }, []);
 
   return (
     <section id="gallery" className="py-24 md:py-32 bg-white border-t border-b border-primary/10">
@@ -75,7 +82,7 @@ const GallerySection = () => {
             <div className="relative max-w-6xl w-full">
               <Carousel
                 opts={{ align: "start", slidesToScroll: 3, loop: true }}
-                setApi={(api) => (carouselApi.current = api)}
+                setApi={handleSetApi}
                 className="w-full"
               >
                 <CarouselContent>
