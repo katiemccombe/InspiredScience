@@ -8,30 +8,44 @@ import {
   CarouselNext,
 } from "./ui/carousel";
 
-import img2650 from "../assets/IMG_2650.jpg";
-import img3245 from "../assets/IMG_3245.jpg";
-import img3250 from "../assets/IMG_3250.jpg";
-import img3259 from "../assets/IMG_3259.jpg";
-import img3263 from "../assets/IMG_3263.jpg";
-import img5092 from "../assets/IMG_5092.jpg";
-import img6487 from "../assets/IMG_6487.jpg";
-import img6871 from "../assets/IMG_6871.jpg";
-import img6874 from "../assets/IMG_6874.jpg";
-import img6875 from "../assets/IMG_6875.jpg";
-import img6877 from "../assets/IMG_6877.jpg";
+import gallery1 from "../assets/Gallery1.jpeg";
+import gallery2 from "../assets/Gallery2.jpg";
+import gallery3 from "../assets/Gallery3.jpeg";
+import gallery4 from "../assets/Gallery4.jpeg";
+import gallery5 from "../assets/Gallery5.jpeg";
+import gallery6 from "../assets/Gallery6.jpg";
+import gallery7 from "../assets/Gallery7.jpg";
+import gallery8 from "../assets/Gallery8.jpg";
+import gallery9 from "../assets/Gallery9.jpg";
+import gallery10 from "../assets/Gallery10.jpg";
+import gallery11 from "../assets/Gallery11.jpg";
+import gallery12 from "../assets/Gallery12.jpeg";
+import gallery13 from "../assets/Gallery13.jpeg";
+import gallery14 from "../assets/Gallery14.jpeg";
+import gallery15 from "../assets/Gallery15.jpeg";
+import gallery16 from "../assets/Gallery16.jpeg";
+import gallery17 from "../assets/Gallery17.jpeg";
+import gallery18 from "../assets/Gallery18.jpeg";
 
 const galleryItems = [
-  { type: "image", src: img2650, alt: "Workshop photo IMG_2650" },
-  { type: "image", src: img3245, alt: "Workshop photo IMG_3245" },
-  { type: "image", src: img3250, alt: "Workshop photo IMG_3250" },
-  { type: "image", src: img3259, alt: "Workshop photo IMG_3259" },
-  { type: "image", src: img3263, alt: "Workshop photo IMG_3263" },
-  { type: "image", src: img5092, alt: "Workshop photo IMG_5092" },
-  { type: "image", src: img6487, alt: "Workshop photo IMG_6487" },
-  { type: "image", src: img6871, alt: "Workshop photo IMG_6871" },
-  { type: "image", src: img6874, alt: "Workshop photo IMG_6874" },
-  { type: "image", src: img6875, alt: "Workshop photo IMG_6875" },
-  { type: "image", src: img6877, alt: "Workshop photo IMG_6877" },
+  { type: "image", src: gallery1, alt: "Workshop photo Gallery 1" },
+  { type: "image", src: gallery2, alt: "Workshop photo Gallery 2" },
+  { type: "image", src: gallery3, alt: "Workshop photo Gallery 3" },
+  { type: "image", src: gallery4, alt: "Workshop photo Gallery 4" },
+  { type: "image", src: gallery5, alt: "Workshop photo Gallery 5" },
+  { type: "image", src: gallery6, alt: "Workshop photo Gallery 6" },
+  { type: "image", src: gallery7, alt: "Workshop photo Gallery 7" },
+  { type: "image", src: gallery8, alt: "Workshop photo Gallery 8" },
+  { type: "image", src: gallery9, alt: "Workshop photo Gallery 9" },
+  { type: "image", src: gallery10, alt: "Workshop photo Gallery 10" },
+  { type: "image", src: gallery11, alt: "Workshop photo Gallery 11" },
+  { type: "image", src: gallery12, alt: "Workshop photo Gallery 12" },
+  { type: "image", src: gallery13, alt: "Workshop photo Gallery 13" },
+  { type: "image", src: gallery14, alt: "Workshop photo Gallery 14" },
+  { type: "image", src: gallery15, alt: "Workshop photo Gallery 15" },
+  { type: "image", src: gallery16, alt: "Workshop photo Gallery 16" },
+  { type: "image", src: gallery17, alt: "Workshop photo Gallery 17" },
+  { type: "image", src: gallery18, alt: "Workshop photo Gallery 18" },
 ];
 
 
