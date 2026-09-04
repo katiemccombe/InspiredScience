@@ -19,7 +19,7 @@ const ContactSection = () => {
             Bring InspirED to Your School
           </h2>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            Are you interested in planning a workshop for your school? Fill out the form below and we’ll be in touch.!
+            Do you have any questions or are you interested in planning a workshop for your school? Fill out the form below and we’ll be in touch!
           </p>
         </motion.div>
 
