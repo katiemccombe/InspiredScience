@@ -56,7 +56,7 @@ const ImpactSection = () => {
               <TestTube className="w-8 h-8 text-primary" />
             </div>
             <h3 className="font-display font-bold text-xl text-primary mb-3">Enzymes in Action</h3>
-            <img src={enzymePhoto} alt="Enzymes in Action workshop" className="w-full h-32 object-cover rounded-lg mb-4" />
+            <img src={enzymePhoto} alt="Enzymes in Action workshop" className="w-full h-48 object-cover rounded-lg mb-4" />
             <p className="font-body text-muted-foreground leading-relaxed text-left">
               Students investigate the function of catalase using liver, potatoes, and onions. By altering temperature and pH, they observe how enzyme activity changes and explore what happens when the body cannot maintain homeostasis. This experiment illustrates how protein structure is linked to function and why stable internal conditions are critical for survival.
             </p>
@@ -73,7 +73,7 @@ const ImpactSection = () => {
               <BicepsFlexed className="w-8 h-8 text-primary" />
             </div>
             <h3 className="font-display font-bold text-xl text-primary mb-3">Circuit Training</h3>
-            <img src={circuitPhoto} alt="Circuit Training workshop" className="w-full h-32 object-cover rounded-lg mb-4" />
+            <img src={circuitPhoto} alt="Circuit Training workshop" className="w-full h-48 object-cover rounded-lg mb-4" />
             <p className="font-body text-muted-foreground leading-relaxed text-left">
               Students learn about muscle function and electrophysiology using EMG and safe electrical stimulation devices. They observe and record muscle activity, then apply gentle stimulation to trigger muscle contractions—even controlling a classmate’s movements! This interactive experience connects theory to real physiology in a fun, memorable way.
             </p>
