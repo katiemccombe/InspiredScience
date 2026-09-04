@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import groupPhoto from "../assets/Group.jpg";
+import groupWorkshopPhoto from "../assets/Group2.jpeg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 24 },
@@ -24,6 +26,24 @@ const AboutSection = () => {
           <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-6">
             What is InspirED Science?
           </h2>
+        </motion.div>
+
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-16"
+        >
+          <img
+            src={groupPhoto}
+            alt="InspirED Science team together"
+            className="w-full aspect-[3/2] object-cover rounded-2xl shadow-lg border border-border"
+          />
+          <img
+            src={groupWorkshopPhoto}
+            alt="InspirED Science team leading a workshop"
+            className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg border border-border"
+          />
         </motion.div>
 
         <div className="max-w-4xl mx-auto space-y-8">
