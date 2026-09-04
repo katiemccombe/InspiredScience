@@ -5,7 +5,7 @@ import Abbey from "../assets/Abbey.jpg";
 import John from "../assets/John.jpg";
 import Sam from "../assets/Sam.jpg";
 import Katie from "../assets/Katie.jpg";
-import Abinaci from "../assets/Abinaci.jpg";
+import Abi from "../assets/Abi.jpg";
 
 const disciplines = [
   {
@@ -18,7 +18,7 @@ const disciplines = [
     icon: FlaskConical,
     title: "Abinaci",
     description: "Abinaci earned an Honours BSc in Interdisciplinary Medical Sciences with a Minor in Medical Cell Biology at Western University and is currently pursuing an MSc in Physiology and Pharmacology. Her research focuses on identifying predictive markers for patients who develop acute kidney injury after cisplatin chemotherapy treatment. She enjoys playing volleyball and basketball, and she is passionate about making science accessible to broader audiences, seeing InspirED Science as a way to share complex scientific concepts with the public.",
-    photo: Abinaci,
+    photo: Abi,
   },
   {
     icon: Microscope,
