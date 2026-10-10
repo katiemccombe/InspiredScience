@@ -7,6 +7,7 @@ import Dillon from "../assets/Headshots/Dillon.jpeg";
 import Jessica from "../assets/Headshots/Jessica.jpeg";
 import John from "../assets/Headshots/John.jpg";
 import Katie from "../assets/Headshots/Katie.jpg";
+import Sam from "../assets/Sam.jpg";
 import groupPhoto from "../assets/Group.jpg";
 import groupWorkshopPhoto from "../assets/Group2.jpeg";
 
@@ -50,6 +51,12 @@ const presidents: TeamMember[] = [
     role: "Cofounder",
     image: Abbey,
     bio: "Abbey earned an Honours BSc in Interdisciplinary Medical Sciences at Western University and is currently pursuing a PhD in Physiology and Pharmacology, where her research focuses on how certain cells in the intestine detect nutrients from food and chemical signals produced by the bacteria living in our gut, using mini-gut models called organoids. She loves hiking and pilates. Abbey joined InspirED Science because doing experiments in high school was one of her favourite parts of science class, and inspired her to pursue science in higher education. She realized that not all students have the same opportunities that she did, so she'd love to help bring hands-on experiments to schools that may not otherwise have access to them."
+  },
+  {
+    name: "Sam",
+    role: "President",
+    image: Sam,
+    bio: "Sam earned an Honours BSc in Interdisciplinary Medical Sciences at Western University and is currently pursuing a PhD in Pathology and Laboratory Medicine, where his research focuses on cannabis use during pregnancy and the risk of diabetes in children. He enjoys skiing and running, and he believes that accessible education is important. As a lay writer for science communication, Sam sees InspirED Science as an opportunity to bring the complexities of science to a wider audience."
   }
 ];
 
@@ -148,13 +155,14 @@ const AboutSection = () => {
         </div>
 
         <motion.div
+          id="disciplines"
           variants={fadeInUp}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="max-w-6xl mx-auto mt-24"
+          className="max-w-6xl mx-auto mt-24 mb-8 rounded-[32px] border border-primary/10 bg-gradient-to-b from-white via-section-alt/80 to-section-alt p-6 md:p-10 shadow-[0_20px_60px_rgba(15,23,42,0.08)]"
         >
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Introduction</p>
+            <p className="font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">Leadership</p>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground">Meet the Team</h2>
           </div>
 
