@@ -8,24 +8,24 @@ import {
   CarouselNext,
 } from "./ui/carousel";
 
-import gallery1 from "../assets/Gallery1.jpeg";
-import gallery2 from "../assets/Gallery2.jpg";
-import gallery3 from "../assets/Gallery3.jpeg";
-import gallery4 from "../assets/Gallery4.jpeg";
-import gallery5 from "../assets/Gallery5.jpeg";
-import gallery6 from "../assets/Gallery6.jpg";
-import gallery7 from "../assets/Gallery7.jpg";
-import gallery8 from "../assets/Gallery8.jpg";
-import gallery9 from "../assets/Gallery9.jpg";
-import gallery10 from "../assets/Gallery10.jpg";
-import gallery11 from "../assets/Gallery11.jpg";
-import gallery12 from "../assets/Gallery12.jpeg";
-import gallery13 from "../assets/Gallery13.jpeg";
-import gallery14 from "../assets/Gallery14.jpeg";
-import gallery15 from "../assets/Gallery15.jpeg";
-import gallery16 from "../assets/Gallery16.jpeg";
-import gallery17 from "../assets/Gallery17.jpeg";
-import gallery18 from "../assets/Gallery18.jpeg";
+import gallery1 from "../assets/Gallery Photos/Gallery1.jpeg";
+import gallery2 from "../assets/Gallery Photos/Gallery2.jpg";
+import gallery3 from "../assets/Gallery Photos/Gallery3.jpeg";
+import gallery4 from "../assets/Gallery Photos/Gallery4.jpeg";
+import gallery5 from "../assets/Gallery Photos/Gallery5.jpeg";
+import gallery6 from "../assets/Gallery Photos/Gallery6.jpg";
+import gallery7 from "../assets/Gallery Photos/Gallery7.jpg";
+import gallery8 from "../assets/Gallery Photos/Gallery8.jpg";
+import gallery9 from "../assets/Gallery Photos/Gallery9.jpg";
+import gallery10 from "../assets/Gallery Photos/Gallery10.jpg";
+import gallery11 from "../assets/Gallery Photos/Gallery11.jpg";
+import gallery12 from "../assets/Gallery Photos/Gallery12.jpeg";
+import gallery13 from "../assets/Gallery Photos/Gallery13.jpeg";
+import gallery14 from "../assets/Gallery Photos/Gallery14.jpeg";
+import gallery15 from "../assets/Gallery Photos/Gallery15.jpeg";
+import gallery16 from "../assets/Gallery Photos/Gallery16.jpeg";
+import gallery17 from "../assets/Gallery Photos/Gallery17.jpeg";
+import gallery18 from "../assets/Gallery Photos/Gallery18.jpeg";
 
 const galleryItems = [
   { type: "image", src: gallery1, alt: "Workshop photo Gallery 1" },
