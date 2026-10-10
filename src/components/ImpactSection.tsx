@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Users, School, Lightbulb, Bird, BicepsFlexed, TestTube } from "lucide-react";
 import circuitPhoto from "../assets/Circuit.jpeg";
 import enzymePhoto from "../assets/Enzyme.jpg";
+import pcrPhoto from "../assets/PCR.jpg";
 
 const ImpactSection = () => {
   const ref = useRef(null);
@@ -38,8 +39,7 @@ const ImpactSection = () => {
               <Bird className="w-8 h-8 text-primary" />
             </div>
             <h3 className="font-display font-bold text-xl text-primary mb-3">Early Bird or Night Owl</h3>
-            {/* Placeholder for future photo */}
-            <div className="w-full h-32 bg-primary/5 rounded-lg mb-4 flex items-center justify-center text-primary/30 text-sm">Photo</div>
+            <img src={pcrPhoto} alt="Early Bird or Night Owl workshop" className="w-full h-48 object-cover rounded-lg mb-4" />
             <p className="font-body text-muted-foreground leading-relaxed text-left">
               Students extract their own DNA and use PCR to analyze a gene linked to circadian rhythm. By examining their results, they explore whether their genetic profile aligns with their natural sleep preferences. This workshop introduces pipetting, PCR, and gel electrophoresis, and encourages critical thinking about genetics, environment, and the nature vs. nurture debate.
             </p>
